@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Kafe08 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         boolean keanggotaan;
         int jmlKopi, jmlTeh, jmlRoti;
@@ -10,13 +10,13 @@ public class Kafe08 {
         float diskon = 10 / 100f;
 
         System.out.print("Masukkan Keanggotaan (true/false) : " );
-        keanggotaan = input.nextBoolean();
+        keanggotaan = sc.nextBoolean();
         System.out.print("Masukkan Jumlah Pembelian Kopi : ");
-        jmlKopi = input.nextInt();
+        jmlKopi = sc.nextInt();
         System.out.print("Masukkan Jumlah Pembelian Teh : ");
-        jmlTeh = input.nextInt();
+        jmlTeh = sc.nextInt();
         System.out.print("Masukkan Jumlah Pembelian Roti : ");
-        jmlRoti = input.nextInt();
+        jmlRoti = sc.nextInt();
 
         double totalHarga = (jmlKopi * hargaKopi) + (jmlTeh * hargaTeh ) + (jmlRoti * hargaRoti);
         double nominalBayar = totalHarga - (diskon * totalHarga);
