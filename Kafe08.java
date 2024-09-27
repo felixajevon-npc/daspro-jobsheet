@@ -22,7 +22,7 @@ public class Kafe08 {
         double nominalBayar = totalHarga - (diskon * totalHarga);
 
         System.out.println("Keanggotaan Pelanggan : " + keanggotaan);
-        System.out.println("Item Pembelian : " + jmlKopi + " Kopi" + jmlTeh + " Teh" + jmlRoti + " Roti");
+        System.out.println("Item Pembelian : " + jmlKopi + " Kopi, " + jmlTeh + " Teh, " + jmlRoti + " Roti");
         System.out.println("Nominal Bayar Rp." + nominalBayar);
     }     
 }
