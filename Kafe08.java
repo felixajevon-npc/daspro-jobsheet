@@ -19,11 +19,18 @@ public class Kafe08 {
         jmlRoti = sc.nextInt();
 
         double totalHarga = (jmlKopi * hargaKopi) + (jmlTeh * hargaTeh ) + (jmlRoti * hargaRoti);
-        double nominalBayar = totalHarga - (diskon * totalHarga);
+        double nominalBayar;
+
+        if (keanggotaan) {
+            nominalBayar = totalHarga - (diskon * totalHarga); 
+        } else {
+            nominalBayar = totalHarga; 
+        }
 
         System.out.println("Keanggotaan Pelanggan : " + keanggotaan);
         System.out.println("Item Pembelian : " + jmlKopi + " Kopi, " + jmlTeh + " Teh, " + jmlRoti + " Roti");
         System.out.println("Nominal Bayar Rp." + nominalBayar);
+        
+        sc.close();
     }     
 }
-
