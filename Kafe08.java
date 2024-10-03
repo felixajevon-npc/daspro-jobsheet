@@ -21,7 +21,7 @@ public class Kafe08 {
         double totalHarga = (jmlKopi * hargaKopi) + (jmlTeh * hargaTeh ) + (jmlRoti * hargaRoti);
         double nominalBayar;
 
-        if (keanggotaan) {
+        if (keanggotaan == true) {
             nominalBayar = totalHarga - (diskon * totalHarga); 
         } else {
             nominalBayar = totalHarga; 

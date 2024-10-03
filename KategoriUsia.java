@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class KategoriUsia {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int usia = -1;
 
         while (true) {
             System.out.print("Masukkan usia Anda: ");
-            if (scanner.hasNextInt()) {
-                usia = scanner.nextInt();
+            if (sc.hasNextInt()) {
+                usia = sc.nextInt();
                 
                 if (usia >= 0) {
                     break; 
@@ -17,7 +17,8 @@ public class KategoriUsia {
                 }
             } else {
                 System.out.println("Input tidak valid. Masukkan angka.");
-                scanner.next();  
+                sc.next();
+                // break;  
             }
         }
 
@@ -31,6 +32,6 @@ public class KategoriUsia {
             System.out.println("Kategori: Lansia");
         }
 
-        scanner.close();
+        sc.close();
     }
 }
