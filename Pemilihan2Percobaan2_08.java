@@ -36,7 +36,7 @@ public class Pemilihan2Percobaan2_08 {
             if (member.equalsIgnoreCase("y") || member.equalsIgnoreCase("n")) {
                 break; 
             } else {
-                System.out.println("Input tidak valid. Masukkan 'y' untuk ya atau 'n' untuk tidak.");
+                System.out.println("Input tidak valid.");
             }
         }
 
