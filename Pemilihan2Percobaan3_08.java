@@ -33,7 +33,7 @@ public class Pemilihan2Percobaan3_08 {
             System.out.println("Pajak Yang Anda Dapat Sebesar : " + pajak);
             System.out.println("Pajak Dalam Persen : " + (pajak * 100) + "%");
             System.out.println("Penghasilan Bersih : " + gajiBersih);
-        } else if (kategori.equalsIgnoreCase("pebisnis")) {
+        } else if (kategori.equals("pebisnis")) {
             if (penghasilan <= 2500000) {
                 pajak = 0.15;
             } else if (penghasilan <= 3500000) {
